@@ -1,0 +1,279 @@
+/* Custom Fonts
+------------------------------------------------------------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('BebasNeue.eot');
+    src: url('BebasNeue.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+font: 62.5% Helvetica,Verdana,Arial,Sans-Serif;
+color: #444;
+background-color: #161616;
+background-repeat: repeat-x;
+background-attachment: fixed;
+min-width: 1600px;
+}
+
+/* HEADER
+------------------------------------------------------------------------------------------------------------------------------- */
+
+#headerwrapper{
+	margin: 0 auto;
+	padding: 0 0 0 0;
+	background-color: #161616;
+	position: relative;
+	width: 980px;
+	text-align: left;
+}
+#headerbump{
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+#header {
+	-moz-border-radius-topleft: 6px;
+	border-top-left-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-right-radius: 6px;
+	margin: 7px 0 0 0;
+	padding: 1em 1em 1em 1em;
+	height: 70px;
+	background: transparent;
+}
+
+#logo{
+	height:70px;
+	position: relative;
+}
+
+#headerline{
+	margin: auto; 
+	width: 970px; 
+	visibility: visible;
+	padding: 1em 0 0.5em 0;
+	border-top: 2px solid #f1f2f4;
+}
+
+/* Navigation Menu
+------------------------------------------------------------------------------------------------------------------------------- */
+
+#nav{
+	display: block;
+	float: right;
+	margin: 0 auto;
+	position: relative;
+	top: -80px;
+	text-transform: none;
+}
+
+#nav .menuheader, .menu {
+font-size: 1.3em;
+margin-left: 10px;
+}
+
+#nav .menuheader ul, div.menu ul {
+list-style: none;
+margin: 0;
+}
+
+#nav .menuheader li, div.menu li {
+float: left;
+position: relative;
+text-transform: none;
+}
+
+#nav a {
+color: #808080;
+display: block;
+line-height: 50px;
+text-decoration: none;
+padding: 0 15px;
+}
+
+#nav a:hover{
+	color: #2b6ea1;
+	transition: color;
+	transition-duration: 400ms;
+	-webkit-transition: color;
+	-webkit-transition-duration: 400ms;
+	-moz-transition: color;
+	-moz-transition-duration: 400ms;
+	-o-transition: color;
+	-o-transition-duration: 400ms;
+
+}
+
+/* BODY
+------------------------------------------------------------------------------------------------------------------------------- */
+
+#contentwrapper{
+	margin: 0 auto;
+	/*background-color: red;*/
+	position: relative;
+	width: 980px;
+	text-align: left;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#container{
+	margin: 0 0 0 8px;
+	padding: 1em 0 1em 0em;
+	width: 980px;
+	/*background-color: blue;*/
+	float: left;
+	display: inline;
+	clear: both;
+}
+
+#content {
+	background-color: #212121;
+	padding: 2em 2em 2em 2em;
+	overflow: hidden;
+}
+
+#content h2 {
+	font-size: 3.7em;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: -0.05em;
+	margin: 0 0 0.5em 0;
+}
+
+h2.title {
+color:#2b6ea1;
+font-weight: bold;
+margin: 0 0 0 0;
+font-size: 28px;
+text-transform: uppercase;
+font-family: Bebas;
+padding-bottom: 20px;
+}
+
+#subcontent {
+font: 1.5em Helvetica,Arial,sans-serif;
+text-align: left;
+color: #444;
+margin: auto;
+}
+
+#rules{
+	text-align: center;
+	line-height: 20px;
+}
+
+.rules{
+	color:white;
+}
+
+#puzzleinfo{
+	font-weight: normal;
+	margin-bottom: 0em;
+}
+
+#winMessage{
+	color:#2b6ea1;
+	font-family: Bebas;
+	font-size: 28px;
+	text-align: center;
+}
+/* PUZZLE
+-------------------------------------------------------------*/
+
+#puzzlesection{
+	height: 480px;
+}
+#puzzlecanvas{
+	width: 940px;
+	position: relative;
+	height: inherit;
+	margin: 50px auto;
+	border: solid 3px;
+	border-color:white;
+}
+
+#puzzlecanvas div
+{
+	width: 235px;
+	height: 120px;
+	position: absolute;
+}
+.rectangle{
+background-size: 940px 480px;
+
+-webkit-transition: box-shadow 0.4s ease, top 0.4s ease, left 0.4s ease;
+	-moz-transition: box-shadow 0.4s ease, top 0.4s ease, left 0.4s ease;
+	-o-transition: box-shadow 0.4s ease, top 0.4s ease, left 0.4s ease;
+	-ms-transition: box-shadow 0.4s ease, top 0.4s ease, left 0.4s ease;
+	transition: box-shadow 0.4s ease, top 0.4s ease, left 0.4s ease;
+}
+
+
+/* PICTURE PREVIEW
+-------------------------------------------------------------*/
+
+#tabtext{
+	color:black;
+	width:80px;
+	height:40px;
+	padding:3px;
+	background-color: #2b6ea1;
+	border: solid white 2px;
+}
+
+#slideout {
+  position: fixed;
+  top: 45%;
+  left: -10px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout_inner {
+  position: fixed;
+  top: 41%;
+  left: -225px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout:hover {
+  left: 225px;
+}
+
+#slideout:hover #slideout_inner {
+  left: 0;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}

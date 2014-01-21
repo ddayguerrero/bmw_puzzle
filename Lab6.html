@@ -1,0 +1,91 @@
+<!doctype>
+<html>
+	<head>
+		<title>Lab 6 - Sliding Puzzle</title>
+		<link rel="stylesheet" type="text/css" href="Lab6CSS.css">
+		<script type="text/javascript" src="Lab6JS.js"></script>
+	</head><!-- Close Head -->
+
+	<body>
+		<div id="headerwrapper">
+			<div id="headerbump"></div>
+			<div id="header">
+				<a href="#">
+					<img src="clubhouselogo.png" height="70" style="position:relative" id="logo">
+				</a>
+
+				<div class="linebreak clear" id="headerline"></div>
+				<div id="nav">
+					<div class="menuheader">
+						<ul id="mainmenu" class="menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Forza Motorsport Clan</a></li>
+						</ul>
+					</div><!-- Close menuheader -->
+				</div><!-- Close nav -->
+			</div><!-- Close header -->
+		</div><!-- Close headerwrapper -->
+
+		<div id="contentwrapper">
+			<div id="container">
+				<div id="content">
+					<div id="puzzleinfo">
+						<h2 class="title">Slide to the finish - Puzzle Game<span id="location"></span></h2>
+						<div id="subcontent">
+
+							<div id="slideout">
+							  <div class="rotate" id="tabtext">Picture Preview</div>
+							  <div id="slideout_inner">
+							  	<img src="bmw.png"/ width="222" height="120">
+							  </div>
+							</div>
+
+							<div id="rules">
+								Can't get enough of the BMWs? Challenge yourself to our latest sliding puzzle game. Simply <span class="rules">click</span> on one of the puzzle pieces that is next to the empty tile to move. <span class="rules">Rearrange</span>  all tiles correctly and witness our latest M3 model. Simply <span class="rules">refresh</span> the page in order to shuffle. Remember, only puzzle pieces perpenducularly near the empty one will be able to slide. Now what are you waiting for? How fast can you arrange the tiles?
+							</div>
+							<div id="puzzlesection">
+							<div id="puzzlecanvas"> <!-- The Puzzle Board -->
+								<div style="top: 0px; left: 0px; background-image: url(bmw.png); background-position: 0px 0px;" class="rectangle" id="0"></div>
+
+								<div style="top: 0px; left: 235px; background-image: url(bmw.png); background-position: -235px 0px;" class="rectangle" id="1"></div>
+
+								<div style="top: 0px; left: 470px; background-image: url(bmw.png); background-position: -470px 0px;" class="rectangle" id="2"></div>
+
+								<div style="top: 0px; left: 705px; background-image: url(bmw.png); background-position: -705px 0px;" class="rectangle" id="3"></div>
+
+								<div style="top: 120px; left: 0px; background-image: url(bmw.png); background-position: 0px -120px;" class="rectangle" id="4"></div>
+
+								<div style="top: 120px; left: 235px; background-image: url(bmw.png); background-position: -235px -120px;" class="rectangle" id="5"></div>
+
+								<div style="top: 120px; left: 470px; background-image: url(bmw.png); background-position: -470px -120px;" class="rectangle" id="6"></div>
+
+								<div style="top: 120px; left: 705px; background-image: url(bmw.png); background-position: -705px -120px;" class="rectangle" id="7"></div>
+
+								<div style="top: 240px; left: 0px; background-image: url(bmw.png); background-position: 0px -240px;" class="rectangle" id="8"></div>
+
+								<div style="top: 240px; left: 235px; background-image: url(bmw.png); background-position: -235px -240px;" class="rectangle" id="9"></div>
+
+								<div style="top: 240px; left: 470px; background-image: url(bmw.png); background-position: -470px -240px;" class="rectangle" id="10"></div>
+
+								<div style="top: 240px; left: 705px; background-image: url(bmw.png); background-position: -705px -240px;" class="rectangle" id="11"></div>
+
+								<div style="top: 360px; left: 0px; background-image: url(bmw.png); background-position: 0px -360px;" class="rectangle" id="12"></div>
+
+								<div style="top: 360px; left: 235px; background-image: url(bmw.png); background-position: -235px -360px;" class="rectangle" id="13"></div>
+
+								<div style="top: 360px; left: 470px; background-image: url(bmw.png); background-position: -470px -360px;" class="rectangle" id="14"></div>
+
+								<div style="top: 360px; left: 705px;" class="blankRectangle" id="15"></div>
+							</div><!-- Close puzzlecanvas -->
+						</div><!-- Close puzzlesection -->
+						<br>
+						<div id="winMessage"></div><!-- Close winMessage -->
+						</div><!-- Close subcontent -->
+					</div><!-- Close puzzleinfo -->
+				</div><!-- Close content -->
+			</div><!-- Close container -->
+		</div><!-- Close contentwrapper -->
+	</body><!-- Close HTML -->
+</html><!-- Close HTML -->
